@@ -40,6 +40,13 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 cd !/.vim/bundle
 git clone https://github.com/kien/ctrlp.vim.git
 
+#configure git
+git config --global user.name "Ivan Zarea"
+git config --global user.email zarea.ion@gmail.com
+git config --global core.editor "vim"
+
+
+
 
 #change the shell to zsh
 chsh -s `which zsh`
