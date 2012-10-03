@@ -1,4 +1,4 @@
-sudo apt-get install zsh git-core vim curl zlib1g-dev build-essential ruby-rvm
+sudo apt-get install zsh git-core vim curl zlib1g-dev build-essential openjdk-6-jdk openjdk-6-jre
 
 #setup the terminal theme to solarized light
 mkdir .config/Terminal
@@ -45,8 +45,8 @@ git config --global user.name "Ivan Zarea"
 git config --global user.email zarea.ion@gmail.com
 git config --global core.editor "vim"
 
-
-
+#install rvm
+curl -L https://get.rvm.io | zsh
 
 #change the shell to zsh
 chsh -s `which zsh`
