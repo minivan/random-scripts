@@ -9,7 +9,7 @@ Some scripts I might use. I might not. Maybe somebody else will.
 A poem to my future self:
 
 
-    When I find yourself in times of trouble
+    When I find myself in times of trouble
     And the netbook is failing me
     Do a clean install and
     wget -qO- https://raw.github.com/minivan/random-scripts/master/os/xubuntu_clean.sh | sh
