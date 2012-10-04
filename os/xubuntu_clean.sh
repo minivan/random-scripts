@@ -1,4 +1,4 @@
-sudo apt-get install zsh git-core vim curl zlib1g-dev build-essential openjdk-6-jdk openjdk-6-jre
+sudo apt-get install zsh git-core vim curl zlib1g-dev build-essential openjdk-6-jdk openjdk-6-jre tmux
 
 #setup the terminal theme to solarized light
 mkdir .config/Terminal
@@ -47,6 +47,9 @@ git config --global core.editor "vim"
 
 #install rvm
 curl -L https://get.rvm.io | zsh
+
+#let's use the heroku toolbelt!
+wget -qO- https://toolbelt.heroku.com/install.sh | sh
 
 #change the shell to zsh
 chsh -s `which zsh`
