@@ -6,13 +6,14 @@ curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/ligh
 
 #download and install the inconsolata font
 mkdir -p ~/.fonts/monospace
+#TODO: Needs to be changed to use a patched version of Inconsolata-dz
+# download this https://gist.github.com/1595572
 curl http://levien.com/type/myfonts/Inconsolata.otf > .fonts/monospace/Inconsolata.otf
 #set it as the primary font for the xfce4-terminal
 echo "FontName=Inconsolata Medium 14" >> .config/Terminal/terminalrc
 
 #install oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-
 
 # personal stuff:
 # 1. clone my .dotfiles
@@ -37,8 +38,15 @@ cd ~/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 
 #install ctrl-p
-cd !/.vim/bundle
+cd ~/.vim/bundle
 git clone https://github.com/kien/ctrlp.vim.git
+
+#install Powerline
+cd ~/.vim/bundle
+git clone git://github.com/Lokaltog/vim-powerline.git
+#run the powerline font patcher
+
+
 
 #configure git
 git config --global user.name "Ivan Zarea"
