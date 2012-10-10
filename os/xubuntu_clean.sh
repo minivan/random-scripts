@@ -8,9 +8,9 @@ curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/ligh
 mkdir -p ~/.fonts/monospace
 #TODO: Needs to be changed to use a patched version of Inconsolata-dz
 # download this https://gist.github.com/1595572
-curl http://levien.com/type/myfonts/Inconsolata.otf > .fonts/monospace/Inconsolata.otf
+#curl http://levien.com/type/myfonts/Inconsolata.otf > .fonts/monospace/Inconsolata.otf
 #set it as the primary font for the xfce4-terminal
-echo "FontName=Inconsolata Medium 14" >> .config/Terminal/terminalrc
+#echo "FontName=Inconsolata Medium 14" >> .config/Terminal/terminalrc
 
 #install oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
