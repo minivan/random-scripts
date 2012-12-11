@@ -1,4 +1,8 @@
-sudo apt-get install zsh git-core vim curl zlib1g-dev build-essential openjdk-6-jdk openjdk-6-jre tmux
+sudo apt-get install -y zsh git-core vim curl zlib1g-dev build-essential openjdk-6-jdk openjdk-6-jre tmux \
+openssl libreadline6 libreadline6-dev git-core libssl-dev libyaml-dev \
+libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev \
+automake libtool bison subversion git nodejs
+
 
 #setup the terminal theme to solarized light
 mkdir .config/Terminal
