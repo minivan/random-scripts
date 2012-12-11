@@ -15,8 +15,22 @@ curl https://gist.github.com/raw/1595572/51bdd743cc1cc551c49457fe1503061b9404183
 # set it as the primary font for the xfce4-terminal
 echo "FontName=Inconsolata Medium 14" >> .config/Terminal/terminalrc
 
-#install oh-my-zsh
+# install oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+# ==========THEME===========
+# create the .themes folder
+mkdir -p ~/.themes
+# get the window decorations
+curl http://xfce-look.org/CONTENT/content-files/87476-darksun-xfce4.tar.bz2 > ~/.themes/window_dec.tar.bz2
+cd ~/.themes
+tar xjvf window.tar.bz2
+# clean up
+rm window.tar.bz2
+# now replace the default theme name from ~/.config/xfce4/xfconf/xfce-perchannel-xml to Darksun
+
+
+
 
 # personal stuff:
 # 1. clone my .dotfiles
