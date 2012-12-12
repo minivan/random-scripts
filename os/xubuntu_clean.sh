@@ -6,7 +6,7 @@ automake libtool bison subversion git nodejs xfce4-terminal
 
 # setup the terminal theme to solarized light
 mkdir .config/Terminal
-curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/light/terminalrc > .config/Terminal/terminalrc 
+curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/dark/terminalrc > .config/Terminal/terminalrc 
 
 # download and install the inconsolata font (using the appropriate patched version for the vim powerline)
 mkdir -p ~/.fonts/monospace
@@ -34,35 +34,11 @@ rm window.tar.bz2
 
 # personal stuff:
 # 1. clone my .dotfiles
-git clone git://github.com/minivan/dotfiles.git
+git clone --recursive git://github.com/minivan/.dotfiles.git
 # 2. create symlink for .vimrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 # 3. create symlink for .zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-
-#create a .dotfiles directory for all the dotfiles
-mkdir -p ~/.dotfiles/.vim
-#symlink .dotfiles/.vim to .vim
-ln -s .dotfiles/.vim ~/.vim
-
-#install pathogen into .dotfiles/vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-  curl -Sso ~/.vim/autoload/pathogen.vim \
-  https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-
-#install the solarized color scheme
-cd ~/.vim/bundle
-git clone git://github.com/altercation/vim-colors-solarized.git
-
-#install ctrl-p
-cd ~/.vim/bundle
-git clone https://github.com/kien/ctrlp.vim.git
-
-#install Powerline
-cd ~/.vim/bundle
-git clone git://github.com/Lokaltog/vim-powerline.git
-#run the powerline font patcher
-
 
 
 #configure git
