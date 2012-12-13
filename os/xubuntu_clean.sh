@@ -6,7 +6,7 @@ automake libtool bison subversion git nodejs xfce4-terminal
 
 # setup the terminal theme to solarized light
 mkdir .config/Terminal
-curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/dark/terminalrc > .config/Terminal/terminalrc 
+curl https://raw.github.com/sgerrand/xfce4-terminal-colors-solarized/master/light/terminalrc > .config/Terminal/terminalrc 
 
 # download and install the inconsolata font (using the appropriate patched version for the vim powerline)
 mkdir -p ~/.fonts/monospace
